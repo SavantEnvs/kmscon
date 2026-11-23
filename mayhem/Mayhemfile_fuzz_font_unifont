@@ -1,0 +1,10 @@
+project: savantenvs/kmscon
+target: fuzz_font_unifont
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_font_unifont/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_font_unifont
+    libfuzzer: true
+    timeout: 5

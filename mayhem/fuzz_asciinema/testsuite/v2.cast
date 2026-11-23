@@ -1,0 +1,4 @@
+{"version":2,"width":80,"height":24}
+[0.1,"o","A"]
+[0.2,"i","ignored"]
+[0.4,"o","B\n\u001b[31m\ud83d\ude03"]

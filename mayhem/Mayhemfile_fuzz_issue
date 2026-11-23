@@ -1,0 +1,10 @@
+project: savantenvs/kmscon
+target: fuzz_issue
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_issue/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_issue
+    libfuzzer: true
+    timeout: 5
